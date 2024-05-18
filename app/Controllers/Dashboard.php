@@ -2,11 +2,11 @@
 
 namespace App\Controllers;
 
-class Home extends BaseController
+class Dashboard extends BaseController
 {
     public function index(): string
     {
-        #echo view('dashboard/modulos/header');
+        return view('inicio');
     }
 
     public function mira(): string
