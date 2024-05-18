@@ -2,233 +2,817 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ServiTech_BD</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link rel="stylesheet" href="dep/plantilla/dist/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="dep/plantilla/dist/vendor/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="dep/plantilla/dist/vendor/perfect-scrollbar/css/perfect-scrollbar.css">
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- CSS for this page only -->
+<link rel="stylesheet" href="dep/plantilla/dist/vendor/chart.js/Chart.min.css">
+    <!-- End CSS  -->
 
-    <!-- Libraries Stylesheet -->
-    <link href="dep/plantilla/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="dep/plantilla/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
-
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="dep/plantilla/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Template Stylesheet -->
-    <link href="dep/plantilla/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="dep/plantilla/dist/assets/css/style.min.css">
+    <link rel="stylesheet" href="dep/plantilla/dist/assets/css/bootstrap-override.min.css">
+    <link rel="stylesheet" id="theme-color" href="dep/plantilla/dist/assets/css/dark.min.css">
 </head>
 
 <body>
-    <div class="container-xxl position-relative bg-white d-flex p-0">
-        <!-- Spinner Start -->
-        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-                <span class="sr-only">Loading...</span>
-            </div>
-        </div>
-        <!-- Spinner End -->
-
-
-        <!-- Sidebar Start -->
-        <div class="sidebar pe-4 pb-3">
-            <nav class="navbar bg-light navbar-light">
-                <a href="index.html" class="navbar-brand mx-4 mb-3">
-                    <h3 class="text-primary">
-                        <!-- <i class="fa fa-hashtag me-2">                             -->
-                        </i>ServiTech_BD</h3>
-                </a>
-                <div class="d-flex align-items-center ms-4 mb-4">
-                    <div class="position-relative">
-                        <img class="rounded-circle" src="dep/plantilla/img/user.jpg" alt="" style="width: 40px; height: 40px;">
-                        <div class="bg-success rounded-circle border border-2 border-white position-absolute end-0 bottom-0 p-1"></div>
-                    </div>
-                    <div class="ms-3">
-                        <h6 class="mb-0">Jhon Doe</h6>
-                        <span>Admin</span>
-                    </div>
+    <div id="app">
+        <div class="shadow-header"></div>
+        <header class="header-navbar fixed">
+            <div class="header-wrapper">
+                <div class="header-left">
+                    <div class="sidebar-toggle action-toggle"><i class="fas fa-bars"></i></div>
+                    
                 </div>
-                <div class="navbar-nav w-100">
-                    <a href="index.html" class="nav-item nav-link"><i class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-laptop me-2"></i>Elements</a>
-                        <div class="dropdown-menu bg-transparent border-0">
-                            <a href="button.html" class="dropdown-item">Buttons</a>
-                            <a href="typography.html" class="dropdown-item">Typography</a>
-                            <a href="element.html" class="dropdown-item">Other Elements</a>
-                        </div>
-                    </div>
-                    <a href="widget.html" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Widgets</a>
-                    <a href="form.html" class="nav-item nav-link"><i class="fa fa-keyboard me-2"></i>Forms</a>
-                    <a href="table.html" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Tables</a>
-                    <a href="chart.html" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>Charts</a>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown"><i class="far fa-file-alt me-2"></i>Pages</a>
-                        <div class="dropdown-menu bg-transparent border-0">
-                            <a href="signin.html" class="dropdown-item">Sign In</a>
-                            <a href="signup.html" class="dropdown-item">Sign Up</a>
-                            <a href="404.html" class="dropdown-item">404 Error</a>
-                            <a href="blank.html" class="dropdown-item active">Blank Page</a>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </div>
-        <!-- Sidebar End -->
-
-
-        <!-- Content Start -->
-        <div class="content">
-            <!-- Navbar Start -->
-            <nav class="navbar navbar-expand bg-light navbar-light sticky-top px-4 py-0">
-                <a href="index.html" class="navbar-brand d-flex d-lg-none me-4">
-                    <h2 class="text-primary mb-0"><i class="fa fa-hashtag"></i></h2>
-                </a>
-                <a href="#" class="sidebar-toggler flex-shrink-0">
-                    <i class="fa fa-bars"></i>
-                </a>
-                <form class="d-none d-md-flex ms-4">
-                    <input class="form-control border-0" type="search" placeholder="Search">
-                </form>
-                <div class="navbar-nav align-items-center ms-auto">
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-                            <i class="fa fa-envelope me-lg-2"></i>
-                            <span class="d-none d-lg-inline-flex">Message</span>
+                <div class="header-content">
+                    <div class="theme-switch-icon"></div>
+                    <div class="notification dropdown">
+                        <a href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="far fa-envelope"></i>
                         </a>
-                        <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">
-                            <a href="#" class="dropdown-item">
-                                <div class="d-flex align-items-center">
-                                    <img class="rounded-circle" src="dep/plantilla/img/user.jpg" alt="" style="width: 40px; height: 40px;">
-                                    <div class="ms-2">
-                                        <h6 class="fw-normal mb-0">Jhon send you a message</h6>
-                                        <small>15 minutes ago</small>
+                        <ul class="dropdown-menu medium">
+                            <li class="menu-header">
+                                <a class="dropdown-item" href="#">Message</a>
+                            </li>
+                            <li class="menu-content ps-menu">
+                                <a href="#">
+                                    <div class="message-image">
+                                        <img src="dep/plantilla/dist/assets/images/avatar1.png" class="rounded-circle w-100" alt="user1">
                                     </div>
-                                </div>
-                            </a>
-                            <hr class="dropdown-divider">
-                            <a href="#" class="dropdown-item">
-                                <div class="d-flex align-items-center">
-                                    <img class="rounded-circle" src="dep/plantilla/img/user.jpg" alt="" style="width: 40px; height: 40px;">
-                                    <div class="ms-2">
-                                        <h6 class="fw-normal mb-0">Jhon send you a message</h6>
-                                        <small>15 minutes ago</small>
+                                    <div class="message-content read">
+                                        <div class="subject">
+                                            John
+                                        </div>
+                                        <div class="body">
+                                            Please call me at 9pm
+                                        </div>
+                                        <div class="time">Just now</div>
                                     </div>
-                                </div>
-                            </a>
-                            <hr class="dropdown-divider">
-                            <a href="#" class="dropdown-item">
-                                <div class="d-flex align-items-center">
-                                    <img class="rounded-circle" src="dep/plantilla/img/user.jpg" alt="" style="width: 40px; height: 40px;">
-                                    <div class="ms-2">
-                                        <h6 class="fw-normal mb-0">Jhon send you a message</h6>
-                                        <small>15 minutes ago</small>
+                                </a>
+                                <a href="#">
+                                    <div class="message-image">
+                                        <img src="dep/plantilla/dist/assets/images/avatar2.png" class="rounded-circle w-100" alt="user1">
                                     </div>
-                                </div>
-                            </a>
-                            <hr class="dropdown-divider">
-                            <a href="#" class="dropdown-item text-center">See all message</a>
-                        </div>
+                                    <div class="message-content">
+                                        <div class="subject">
+                                            Michele
+                                        </div>
+                                        <div class="body">
+                                            Please come to my party
+                                        </div>
+                                        <div class="time">3 hours ago</div>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="message-image">
+                                        <img src="dep/plantilla/dist/assets/images/avatar1.png" class="rounded-circle w-100" alt="user1">
+                                    </div>
+                                    <div class="message-content read">
+                                        <div class="subject">
+                                            Brad
+                                        </div>
+                                        <div class="body">
+                                            I have something to discuss, please call me soon
+                                        </div>
+                                        <div class="time">3 hours ago</div>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="message-image">
+                                        <img src="dep/plantilla/dist/assets/images/avatar2.png" class="rounded-circle w-100" alt="user1">
+                                    </div>
+                                    <div class="message-content">
+                                        <div class="subject">
+                                            Anel
+                                        </div>
+                                        <div class="body">
+                                            Sorry i'm late
+                                        </div>
+                                        <div class="time">8 hours ago</div>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="message-image">
+                                        <img src="dep/plantilla/dist/assets/images/avatar2.png" class="rounded-circle w-100" alt="user1">
+                                    </div>
+                                    <div class="message-content">
+                                        <div class="subject">
+                                            Mary
+                                        </div>
+                                        <div class="body">
+                                            Please answer my question last night
+                                        </div>
+                                        <div class="time">Last month</div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-                            <i class="fa fa-bell me-lg-2"></i>
-                            <span class="d-none d-lg-inline-flex">Notificatin</span>
+                    <div class="notification dropdown">
+                        <a href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="far fa-bell"></i>
+                            <span class="badge">12</span>
                         </a>
-                        <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">
-                            <a href="#" class="dropdown-item">
-                                <h6 class="fw-normal mb-0">Profile updated</h6>
-                                <small>15 minutes ago</small>
-                            </a>
-                            <hr class="dropdown-divider">
-                            <a href="#" class="dropdown-item">
-                                <h6 class="fw-normal mb-0">New user added</h6>
-                                <small>15 minutes ago</small>
-                            </a>
-                            <hr class="dropdown-divider">
-                            <a href="#" class="dropdown-item">
-                                <h6 class="fw-normal mb-0">Password changed</h6>
-                                <small>15 minutes ago</small>
-                            </a>
-                            <hr class="dropdown-divider">
-                            <a href="#" class="dropdown-item text-center">See all notifications</a>
-                        </div>
+                        <ul class="dropdown-menu medium">
+                            <li class="menu-header">
+                                <a class="dropdown-item" href="#">Notification</a>
+                            </li>
+                            <li class="menu-content ps-menu">
+                                <a href="#">
+                                    <div class="message-icon text-danger">
+                                        <i class="fas fa-exclamation-triangle"></i>
+                                    </div>
+                                    <div class="message-content read">
+                                        <div class="body">
+                                            There's incoming event, don't miss it!!
+                                        </div>
+                                        <div class="time">Just now</div>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="message-icon text-info">
+                                        <i class="fas fa-info"></i>
+                                    </div>
+                                    <div class="message-content read">
+                                        <div class="body">
+                                            Your licence will expired soon
+                                        </div>
+                                        <div class="time">3 hours ago</div>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="message-icon text-success">
+                                        <i class="fas fa-check"></i>
+                                    </div>
+                                    <div class="message-content">
+                                        <div class="body">
+                                            Successfully register new user
+                                        </div>
+                                        <div class="time">8 hours ago</div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-                            <img class="rounded-circle me-lg-2" src="dep/plantilla/img/user.jpg" alt="" style="width: 40px; height: 40px;">
-                            <span class="d-none d-lg-inline-flex">John Doe</span>
+                    <div class="dropdown dropdown-menu-end">
+                        <a href="#" class="user-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class="label">
+                                <span></span>
+                                <div>Admin</div>
+                            </div>
+                            <img class="img-user" src="dep/plantilla/dist/assets/images/avatar1.png" alt="user"srcset="">
                         </a>
-                        <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">
-                            <a href="#" class="dropdown-item">My Profile</a>
-                            <a href="#" class="dropdown-item">Settings</a>
-                            <a href="#" class="dropdown-item">Log Out</a>
-                        </div>
+                        <ul class="dropdown-menu small">
+                            <!-- <li class="menu-header">
+                                <a class="dropdown-item" href="#">Notifikasi</a>
+                            </li> -->
+                            <li class="menu-content ps-menu">
+                                <a href="#">
+                                    <div class="description">
+                                        <i class="ti-user"></i> Profile
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="description">
+                                        <i class="ti-settings"></i> Setting
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="description">
+                                        <i class="ti-power-off"></i> Logout
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-                </div>
-            </nav>
-            <!-- Navbar End -->
 
-
-            <!-- Blank Start -->
-            <div class="container-fluid pt-4 px-4">
-                <div class="row vh-100 bg-light rounded align-items-center justify-content-center mx-0">
-                    <div class="col-md-6 text-center">
-                        <h3>This is blank page</h3>
-                    </div>
-                </div>
-            </div>
-            <!-- Blank End -->
-
-
-            <!-- Footer Start -->
-            <div class="container-fluid pt-4 px-4">
-                <div class="bg-light rounded-top p-4">
-                    <div class="row">
-                        <div class="col-12 col-sm-6 text-center text-sm-start">
-                            &copy; <a href="#">Your Site Name</a>, All Right Reserved. 
-                        </div>
-                        <div class="col-12 col-sm-6 text-center text-sm-end">
-                            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                            Designed By <a href="https://htmlcodex.com">HTML Codex</a>
-                        </div>
-                    </div>
                 </div>
             </div>
-            <!-- Footer End -->
+        </header>
+        <nav class="main-sidebar ps-menu">
+            <!-- <div class="sidebar-toggle action-toggle">
+                <a href="#">
+                    <i class="fas fa-bars"></i>
+                </a>
+            </div> -->
+            <!-- <div class="sidebar-opener action-toggle">
+                <a href="#">
+                    <i class="ti-angle-right"></i>
+                </a>
+            </div> -->
+            <div class="sidebar-header">
+                <div class="text text-white">ServiTech_BD</div>
+                <div class="close-sidebar action-toggle">
+                    <i class="ti-close"></i>
+                </div>
+            </div>
+            <div class="sidebar-content">
+                <ul>
+                    <li class="active">
+                        <a href="index.html" class="link">
+                            <i class="ti-home"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="menu-category">
+                        <span class="text-uppercase">User Interface</span>
+                    </li>
+                    <li>
+                        <a href="#" class="main-menu has-dropdown">
+                            <i class="ti-desktop"></i>
+                            <span>UI Elements</span>
+                        </a>
+                        <ul class="sub-menu ">
+                            <li><a href="element-ui.html" class="link"><span>Elements</span></a></li>
+                            <li><a href="element-accordion.html" class="link"><span>Accordion</span></a></li>
+                            <li><a href="element-tabs-collapse.html" class="link"><span>Tabs & Collapse</span></a></li>
+                            <li><a href="element-card.html" class="link"><span>Card</span></a></li>
+                            <li><a href="element-button.html" class="link"><span>Buttons</span></a></li>
+                            <li><a href="element-alert.html" class="link"><span>Alert</span></a></li>
+                            <li><a href="element-themify-icons.html" class="link"><span>Themify Icons</span></a></li>
+                            <li><a href="element-modal.html" class="link"><span>Modal</span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="main-menu has-dropdown">
+                            <i class="ti-book"></i>
+                            <span>Form</span>
+                        </a>
+                        <ul class="sub-menu ">
+                            <li><a href="form-element.html" class="link">
+                                    <span>Form Element</span></a>
+                            </li>
+                            <li><a href="form-datepicker.html" class="link">
+                                    <span>Datepicker</span></a>
+                            </li>
+                            <li><a href="form-select2.html" class="link">
+                                    <span>Select2</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-category">
+                        <span class="text-uppercase">Utilities</span>
+                    </li>
+                    <li>
+                        <a href="#" class="main-menu has-dropdown">
+                            <i class="ti-notepad"></i>
+                            <span>Utilities</span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li><a href="error-404.html" target="_blank" class="link"><span>Error 404</span></a></li>
+                            <li><a href="error-403.html" target="_blank" class="link"><span>Error 403</span></a></li>
+                            <li><a href="error-500.html" target="_blank" class="link"><span>Error 500</span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="main-menu has-dropdown">
+                            <i class="ti-layers-alt"></i>
+                            <span>Pages</span>
+                        </a>
+                        <ul class="sub-menu ">
+                            <li><a href="pages-blank.html" class="link"><span>Blank</span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="main-menu has-dropdown">
+                            <i class="ti-hummer"></i>
+                            <span>Auth</span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li><a href="auth-login.html" target="_blank" class="link"><span>Login</span></a></li>
+                            <li><a href="auth-register.html" target="_blank" class="link"><span>Register</span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="main-menu has-dropdown">
+                            <i class="ti-write"></i>
+                            <span>Tables</span>
+                        </a>
+                        <ul class="sub-menu ">
+                            <li><a href="table-basic.html" class="link"><span>Table Basic</span></a></li>
+                            <li><a href="table-datatables.html" class="link"><span>DataTables</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-category">
+                        <span class="text-uppercase">Extra</span>
+                    </li>
+                    <li>
+                        <a href="charts.html" class="link">
+                            <i class="ti-bar-chart"></i>
+                            <span>Charts</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="fullcalendar.html" class="link">
+                            <i class="ti-calendar"></i>
+                            <span>Calendar</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>        
+<div class="main-content">
+    <div class="title">
+        Dashboard
+    </div>
+    <div class="content-wrapper">
+        <div class="row same-height">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Monthly Sales</h4>
+                    </div>
+                    <div class="card-body">
+                        <canvas id="myChart" height="642" width="1388"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Statistics</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="progress-wrapper">
+                            <h4>Progress 25%</h4>
+                            <div class="progress progress-bar-small">
+                                <div class="progress-bar progress-bar-small" style="width: 25%" role="progressbar"
+                                    aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress-wrapper">
+                            <h4>Progress 45%</h4>
+                            <div class="progress progress-bar-small">
+                                <div class="progress-bar progress-bar-small bg-pink" style="width: 45%"
+                                    role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+                                </div>
+                            </div>
+                        </div>
+                        <canvas id="myChart2" height="842" width="1388"></canvas>
+
+                    </div>
+                </div>
+            </div>
         </div>
-        <!-- Content End -->
+    </div>
+    <div class="content-wrapper">
+        <div class="row same-height">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="header-statistics">
+                        <h5>Monthly Statistics</h5>
+                        <p>Based On Major Browser</p>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table small-font table-striped table-hover table-sm">
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Google Chrome</td>
+                                        <td>5120</td>
+                                        <td><i class="fa fa-caret-up text-success"></i></td>
 
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Mozilla Firefox</td>
+                                        <td>4000</td>
+                                        <td><i class="fa fa-caret-up text-success"></i></td>
 
-        <!-- Back to Top -->
-        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>Safari</td>
+                                        <td>8800</td>
+                                        <td><i class="fa fa-caret-down text-danger"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>Opera Mini</td>
+                                        <td>4123</td>
+                                        <td><i class="fa fa-caret-up text-success"></i></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Interest</h4>
+                    </div>
+                    <div class="card-body">
+                        <canvas id="myChart3" height="842" width="1388"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content-wrapper">
+        <div class="row same-height">
+            <div class="col-md-4">
+                <div class="card">
+                    <!-- <div class="float-label">
+                        <h6>Sales</h6>
+                        <h4>$1500</h4>
+                    </div> -->
+                    <div class="card-body">
+                        <div id="apex-chart"></div>
+                    </div>
+                </div>
+                <br>
+                <div class="card">
+                    <!-- <div class="float-label">
+                        <h6>Profit</h6>
+                        <h4>$500</h4>
+                    </div> -->
+                    <span></span>
+
+                    <div class="card-body">
+                        <div id="apex-chart-bar"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Activities</h4>
+                    </div>
+                    <div class="card-body">
+                        <ul class="timeline-xs">
+                            <li class="timeline-item success">
+                                <div class="margin-left-15">
+                                    <div class="text-muted text-small">
+                                        2 minutes ago
+                                    </div>
+                                    <p>
+                                        <a class="text-info" href="">
+                                            Bambang
+                                        </a>
+                                        has completed his account.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="timeline-item">
+                                <div class="margin-left-15">
+                                    <div class="text-muted text-small">
+                                        12:30
+                                    </div>
+                                    <p>
+                                        Staff Meeting
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="timeline-item danger">
+                                <div class="margin-left-15">
+                                    <div class="text-muted text-small">
+                                        11:11
+                                    </div>
+                                    <p>
+                                        Completed new layout.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="timeline-item info">
+                                <div class="margin-left-15">
+                                    <div class="text-muted text-small">
+                                        Thu, 12 Jun
+                                    </div>
+                                    <p>
+                                        Contacted
+                                        <a class="text-info" href="">
+                                            Microsoft
+                                        </a>
+                                        for license upgrades.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="timeline-item">
+                                <div class="margin-left-15">
+                                    <div class="text-muted text-small">
+                                        Tue, 10 Jun
+                                    </div>
+                                    <p>
+                                        Started development new site
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="timeline-item">
+                                <div class="margin-left-15">
+                                    <div class="text-muted text-small">
+                                        Sun, 11 Apr
+                                    </div>
+                                    <p>
+                                        Lunch with
+                                        <a class="text-info" href="">
+                                            Mba Inem
+                                        </a>
+                                        .
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="timeline-item warning">
+                                <div class="margin-left-15">
+                                    <div class="text-muted text-small">
+                                        Wed, 25 Mar
+                                    </div>
+                                    <p>
+                                        server Maintenance.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Chat</h4>
+                    </div>
+                    <div class="card-body small-padding">
+                        <div class="panel-discussion ps-chat">
+                            <ol class="discussion">
+                                <li class="messages-date">
+                                    Sunday, Feb 9, 12:58
+                                </li>
+                                <li class="self">
+                                    <div class="message">
+                                        <div class="message-name">
+                                            Mas Bambang
+                                        </div>
+                                        <div class="message-text">
+                                            Hi, Mba Inem
+                                        </div>
+                                        <div class="message-avatar">
+                                            <img src="dep/plantilla/dist/assets/images/avatar1.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="message">
+                                        <div class="message-name">
+                                            Mba Inem
+                                        </div>
+                                        <div class="message-text">
+                                            How are you?
+                                        </div>
+                                        <div class="message-avatar">
+                                            <img src="dep/plantilla/dist/assets/images/avatar1.png" alt="">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="other">
+                                    <div class="message">
+                                        <div class="message-name">
+                                            Mba Inem
+                                        </div>
+                                        <div class="message-text">
+                                            Hi, i am good
+                                        </div>
+                                        <div class="message-avatar">
+                                            <img src="dep/plantilla/dist/assets/images/avatar2.png" alt="">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="self">
+                                    <div class="message">
+                                        <div class="message-name">
+                                            Mas Bambang
+                                        </div>
+                                        <div class="message-text">
+                                            Glad to see you ;)
+                                        </div>
+                                        <div class="message-avatar">
+                                            <img src="dep/plantilla/dist/assets/images/avatar1.png" alt="">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="messages-date">
+                                    Sunday, Feb 9, 13:10
+                                </li>
+                                <li class="other">
+                                    <div class="message">
+                                        <div class="message-name">
+                                            Mba Inem
+                                        </div>
+                                        <div class="message-text">
+                                            What do you think about my new Dashboard?
+                                        </div>
+                                        <div class="message-avatar">
+                                            <img src="dep/plantilla/dist/assets/images/avatar2.png" alt="">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="messages-date">
+                                    Sunday, Feb 9, 15:28
+                                </li>
+                                <li class="other">
+                                    <div class="message">
+                                        <div class="message-name">
+                                            Mba Inem
+                                        </div>
+                                        <div class="message-text">
+                                            Alo...
+                                        </div>
+                                        <div class="message-avatar">
+                                            <img src="dep/plantilla/dist/assets/images/avatar2.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="message">
+                                        <div class="message-name">
+                                            Mba Inem
+                                        </div>
+                                        <div class="message-text">
+                                            Are you there?
+                                        </div>
+                                        <div class="message-avatar">
+                                            <img src="dep/plantilla/dist/assets/images/avatar2.png" alt="">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="self">
+                                    <div class="message">
+                                        <div class="message-name">
+                                            Mas Bambang
+                                        </div>
+                                        <div class="message-text">
+                                            Hi, i am here
+                                        </div>
+                                        <div class="message-avatar">
+                                            <img src="dep/plantilla/dist/assets/images/avatar1.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="message">
+                                        <div class="message-name">
+                                            Mba Inem
+                                        </div>
+                                        <div class="message-text">
+                                            Your Dashboard is great
+                                        </div>
+                                        <div class="message-avatar">
+                                            <img src="dep/plantilla/dist/assets/images/avatar1.png" alt="">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="messages-date">
+                                    Friday, Feb 7, 23:39
+                                </li>
+                                <li class="other">
+                                    <div class="message">
+                                        <div class="message-name">
+                                            Mba Inem
+                                        </div>
+                                        <div class="message-text">
+                                            How does the binding and digesting work in ReactJS?, Bang?
+                                        </div>
+                                        <div class="message-avatar">
+                                            <img src="dep/plantilla/dist/assets/images/avatar2.png" alt="">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="self">
+                                    <div class="message">
+                                        <div class="message-name">
+                                            Mas Bambang
+                                        </div>
+                                        <div class="message-text">
+                                            oh that's your question?
+                                        </div>
+                                        <div class="message-avatar">
+                                            <img src="dep/plantilla/dist/assets/images/avatar1.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="message">
+                                        <div class="message-name">
+                                            Mas Bambang
+                                        </div>
+                                        <div class="message-text">
+                                            little reduntant, no?
+                                        </div>
+                                        <div class="message-avatar">
+                                            <img src="dep/plantilla/dist/assets/images/avatar1.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="message">
+                                        <div class="message-name">
+                                            Mas Bambang
+                                        </div>
+                                        <div class="message-text">
+                                            literally we get the question daily
+                                        </div>
+                                        <div class="message-avatar">
+                                            <img src="dep/plantilla/dist/assets/images/avatar1.png" alt="">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ol>
+                        </div>
+                        <div class="message-bar">
+                            <div class="message-inner">
+                                <a class="link icon-only" href="#"><i class="fa fa-camera"></i></a>
+                                <div class="message-area">
+                                    <textarea placeholder="Message"></textarea>
+                                </div>
+                                <a class="link" href="#">
+                                    Send
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="dep/plantilla/lib/chart/chart.min.js"></script>
-    <script src="dep/plantilla/lib/easing/easing.min.js"></script>
-    <script src="dep/plantilla/lib/waypoints/waypoints.min.js"></script>
-    <script src="dep/plantilla/lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="dep/plantilla/lib/tempusdominus/js/moment.min.js"></script>
-    <script src="dep/plantilla/lib/tempusdominus/js/moment-timezone.min.js"></script>
-    <script src="dep/plantilla/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+</div>
 
-    <!-- Template Javascript -->
-    <script src="dep/plantilla/js/main.js"></script>
+        <div class="settings">
+            <div class="settings-icon-wrapper">
+                <div class="settings-icon">
+                    <i class="ti ti-settings"></i>
+                </div>
+            </div>
+            <div class="settings-content">
+                <ul>
+                    <li class="fix-header">
+                        <div class="fix-header-wrapper">
+                            <div class="form-check form-switch lg">
+                                <label class="form-check-label" for="settingsFixHeader">Fixed Header</label>
+                                <input class="form-check-input toggle-settings" name="Header" type="checkbox"
+                                    id="settingsFixHeader">
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="fix-footer">
+                        <div class="fix-footer-wrapper">
+                            <div class="form-check form-switch lg">
+                                <label class="form-check-label" for="settingsFixFooter">Fixed Footer</label>
+                                <input class="form-check-input toggle-settings" name="Footer" type="checkbox"
+                                    id="settingsFixFooter">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="theme-switch">
+                            <label for="">Theme Color</label>
+                            <div>
+                                <div class="form-check form-check-inline lg">
+                                    <input class="form-check-input lg theme-color" type="radio" name="ThemeColor" id="light"
+                                        value="light">
+                                    <label class="form-check-label" for="light">Light</label>
+                                </div>
+                                <div class="form-check form-check-inline lg">
+                                    <input class="form-check-input lg theme-color" type="radio" name="ThemeColor" id="dark"
+                                        value="dark">
+                                    <label class="form-check-label" for="dark">Dark</label>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="fix-footer-wrapper">
+                            <div class="form-check form-switch lg">
+                                <label class="form-check-label" for="settingsFixFooter">Collapse Sidebar</label>
+                                <input class="form-check-input toggle-settings" name="Sidebar" type="checkbox"
+                                    id="settingsFixFooter">
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div> 
+
+        <footer>
+            Copyright © 2022 &nbsp <a href="https://www.youtube.com/c/mulaidarinull" target="_blank" class="ml-1"> Mulai Dari Null </a> <span> . All rights Reserved</span>
+        </footer>
+        <div class="overlay action-toggle">
+        </div>
+    </div>
+    <script src="dep/plantilla/dist/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="dep/plantilla/dist/vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+
+    <!-- js for this page only -->
+<script src="dep/plantilla/dist/vendor/chart.js/Chart.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+<script src="dep/plantilla/dist/assets/js/pages/index.min.js"></script>
+    <!-- ======= -->
+    <script src="dep/plantilla/dist/assets/js/main.min.js"></script>
+    <script>
+        Main.init()
+    </script>
 </body>
 
 </html>

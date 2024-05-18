@@ -7,7 +7,6 @@ class Home extends BaseController
     public function index(): string
     {
         return view('inicio');
-        #return "ruta automatica";
     }
 
     public function mira(): string
