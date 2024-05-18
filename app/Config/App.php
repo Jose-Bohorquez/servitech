@@ -13,15 +13,25 @@ class App extends BaseConfig
      *
      * URL to your CodeIgniter root. Typically, this will be your base URL,
      * WITH a trailing slash:
+     * 
+     * URL a tu raíz de CodeIgniter. Normalmente, esta será tu URL base,
+     * CON una barra diagonal final:
      *
      * E.g., http://example.com/
      */
-    public string $baseURL = 'http://localhost:8080/';
+     public string $baseURL = 'http://localhost:8080/';
+    # public string $baseURL = 'http://servitech.test/';
+    # public string $baseURL = 'http://localhost/servitech/public/';
+    
+    
 
     /**
      * Allowed Hostnames in the Site URL other than the hostname in the baseURL.
      * If you want to accept multiple Hostnames, set this.
      *
+     * Nombres de host permitidos en la URL del sitio que no sean el nombre de host en la URL base.
+     * Si desea aceptar varios nombres de host, configúrelo.
+     * 
      * E.g.,
      * When your site URL ($baseURL) is 'http://example.com/', and your site
      * also accepts 'http://media.example.com/' and 'http://accounts.example.com/':
@@ -93,7 +103,8 @@ class App extends BaseConfig
      * strings (like currency markers, numbers, etc), that your program
      * should run under for this request.
      */
-    public string $defaultLocale = 'en';
+     public string $defaultLocale = 'en';
+    # public string $defaultLocale = 'es';
 
     /**
      * --------------------------------------------------------------------------
@@ -130,10 +141,14 @@ class App extends BaseConfig
      * The default timezone that will be used in your application to display
      * dates with the date helper, and can be retrieved through app_timezone()
      *
+     * La zona horaria predeterminada que se usará en la aplicación para mostrar
+     * fechas con el ayudante de fechas, y se puede recuperar a través de app_timezone()
+     * 
      * @see https://www.php.net/manual/en/timezones.php for list of timezones
      *      supported by PHP.
      */
-    public string $appTimezone = 'UTC';
+    # public string $appTimezone = 'UTC';
+    public string $appTimezone = 'America/Bogota';
 
     /**
      * --------------------------------------------------------------------------
@@ -143,6 +158,9 @@ class App extends BaseConfig
      * This determines which character set is used by default in various methods
      * that require a character set to be provided.
      *
+     * Esto determina qué juego de caracteres se utiliza de forma predeterminada 
+     * en varios métodos que requieren que se proporcione un conjunto de caracteres.
+     * 
      * @see http://php.net/htmlspecialchars for a list of supported charsets.
      */
     public string $charset = 'UTF-8';
