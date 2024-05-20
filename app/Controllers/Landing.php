@@ -12,7 +12,11 @@ class Landing extends BaseController
         // . view('landing/paginas/inicio')
         // . view('landing/modulos/4_footer');
 
-        $datosPagina = ["titulo" => "inicio"];
+        $datosPagina = ["titulo" => "inicio", 
+                        "tituloAlerta" => "Buen Trabajo", 
+                        "contenidoAlerta" => "estas viendo la Pagina de inicio",
+                        "tipoAlerta" => "success"
+                       ];
         return view('landing/2_landingViewLayouts/inicio', $datosPagina);
     }
 
