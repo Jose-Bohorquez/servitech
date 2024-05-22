@@ -25,14 +25,14 @@
     </div>
 
     <div class="carousel-item" data-bs-interval="2000">
-      <img src="dep/img/banners/2.png" class="d-block w-100" alt="...">
+      <img src="dep/img/banners/5.png" class="d-block w-100 img-fluid rounded-5" alt="...">
       <div class="carousel-caption d-none d-md-block">
         <h5>Second slide label</h5>
         <p>Some representative placeholder content for the second slide.</p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="dep/img/banners/3.png" class="d-block w-100" alt="...">
+      <img src="dep/img/banners/6.png" class="d-block w-100 img-fluid rounded-5" alt="...">
       <div class="carousel-caption d-none d-md-block">
         <h5>Third slide label</h5>
         <p>Some representative placeholder content for the third slide.</p>

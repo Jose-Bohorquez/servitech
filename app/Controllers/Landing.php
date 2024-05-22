@@ -12,17 +12,13 @@ class Landing extends BaseController
         // . view('landing/paginas/inicio')
         // . view('landing/modulos/4_footer');
 
-        $datosPagina = ["titulo" => "inicio", 
-                        "tituloAlerta" => "Buen Trabajo", 
-                        "contenidoAlerta" => "estas viendo la Pagina de inicio",
-                        "tipoAlerta" => "success"
-                       ];
+        $datosPagina = ["titulo" => "inicio"];
         return view('landing/2_landingViewLayouts/inicio', $datosPagina);
     }
 
-    public function mira(): string
+    public function nosotros(): string
     {
-        #return view('welcome_message');
-        return "ruta xxx";
+        $datosPagina = ["titulo" => "Nosotros"];
+        return view('landing/2_landingViewLayouts/nosotros', $datosPagina);
     }
 }
