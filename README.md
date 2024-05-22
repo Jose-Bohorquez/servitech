@@ -1,3 +1,20 @@
+# ServiTech
+es una aplicacion web para un emprendimiento de sistemas, 
+mantenimiento de equipos, servicios tecnicos, cambio de piesas
+y todo esto unicamente a domicilio (habran mas servicios) etc...
+
+# Tecnologias
+- HTML5
+- CSS3
+- JAVASCRIPT
+- PHP8
+- BOOTSTRAP5
+- CODEIGNITER4
+- MYSQL
+
+# Beneficiarios
+todo tecnico certificado en sistemas que quiera laborar en bogotá
+
 # CodeIgniter 4 Application Starter
 
 ## What is CodeIgniter?
