@@ -16,10 +16,10 @@
   <div class="carousel-inner">
 
     <div class="carousel-item active" data-bs-interval="10000">
-      <img src="dep/img/banners/4.jpeg" class="d-block w-100 img-fluid rounded-5" alt="...">
+      <img src="dep/img/banners/ajustado.png" class="d-block w-100 img-fluid rounded-5" alt="...">
       <div class="carousel-caption d-none d-md-block">
-        <h5>Second slide label</h5>
-        <p>Some representative placeholder content for the second slide.</p>
+        <h5 class="text-white">Second slide label</h5>
+        <p class="text-white">Some representative placeholder content for the second slide.</p>
       </div>
 
     </div>
